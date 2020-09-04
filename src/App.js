@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>should to do, check it</h1>
+        <h1>should to do, check it {inputText}</h1>
       </header>
       <Form setInputText={setInputText}/>
       <TodoList />
