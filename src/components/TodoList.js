@@ -7,7 +7,9 @@
    return(
      <div className="todo-container">
       <ul className="todo-list">
-        <Todo />
+        { todos.map( (todo)=> (
+          <Todo text={todo.text} id={todo.id} />
+        ))}
       </ul>
     </div>
    );
