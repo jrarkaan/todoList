@@ -6,6 +6,15 @@ const Todo = ({text, todos, todo, setTodos})=>{
     console.log(todo);
     setTodos(todos.filter( el => el.id !== todo.id));
   }
+  const completeHandler = () =>{
+    setTodos(todos.map(item=>{
+      if(item.id === todo.id){
+        return {
+          ...item, completed: !item.completed
+        }
+      }
+    }))
+  }
   return(
     <div className="todo">
       <li className="todo-item">{text}</li>
