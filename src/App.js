@@ -5,9 +5,12 @@ import Form from './components/Form';
 import TodoList from './components/TodoList';
 
 function App() {
+  // state stuff
   const [inputText, setInputText] = useState('');
   const [todos, setTodos] = useState([]);
   const [status, setStatus] = useState('all');
+  const [filteredTodos, setFiltered] = useState([]);
+  // functions
 
   return (
     <div className="App">
