@@ -3,7 +3,7 @@
  import Todo from './Todo.js';
 
  const TodoList = ({todos, setTodos})=>{
-   console.log(todos);
+   //console.log(todos);
    return(
      <div className="todo-container">
       <ul className="todo-list">

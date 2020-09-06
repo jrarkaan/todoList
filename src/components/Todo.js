@@ -3,7 +3,7 @@ import React from 'react';
 const Todo = ({text, todos, todo, setTodos})=>{
   // events
   const deleteHandler = ()=>{
-    console.log(todo);
+    //console.log(todo);
     setTodos(todos.filter( el => el.id !== todo.id));
   }
   const completeHandler = () =>{
