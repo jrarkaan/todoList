@@ -18,8 +18,10 @@ function App() {
         break;
       case 'uncompleted':
         setFiltered(todos.filter( todo => todo.completed === false));
+        break;
       default:
         setFiltered(todos);
+        break;
     }
   }
   return (
