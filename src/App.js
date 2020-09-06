@@ -35,7 +35,9 @@ function App() {
       <header>
         <h1>should to do, check it</h1>
       </header>
-      <Form inputText={inputText} todos={todos} setTodos={setTodos} setInputText={setInputText} setStatus={setStatus} />
+      <Form inputText={inputText} todos={todos}
+          setTodos={setTodos} setInputText={setInputText}
+          setStatus={setStatus} filteredTodos={filteredTodos}/>
       <TodoList setTodos={setTodos} todos={todos}/>
     </div>
   );
